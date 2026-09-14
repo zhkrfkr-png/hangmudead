@@ -2,9 +2,25 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>부고 안내</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#1c1c1c">
+
+<title>故 석환희님 부고</title>
+
+<!-- 한글 명조/고딕 폰트 -->
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
 
 <style>
 
@@ -12,176 +28,524 @@
     box-sizing: border-box;
 }
 
+html {
+    background: #ecebe7;
+}
+
 body {
     margin: 0;
-    background: #eeeeee;
+    color: #292929;
+    background: #ecebe7;
+
     font-family:
+        "Noto Sans KR",
         -apple-system,
         BlinkMacSystemFont,
-        "Apple SD Gothic Neo",
-        "Noto Sans KR",
-        Arial,
         sans-serif;
-    color: #222;
 }
 
-.container {
+
+/* 전체 카드 */
+
+.page {
+
+    width: 100%;
     max-width: 520px;
-    margin: 0 auto;
-    background: #ffffff;
     min-height: 100vh;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 35px
+        rgba(0,0,0,0.07);
 }
 
-.header {
-    background: #222;
-    color: white;
+
+/* 상단 */
+
+.hero {
+
+    padding:
+        52px
+        20px
+        45px;
+
     text-align: center;
-    padding: 35px 20px 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #191919,
+            #292929
+        );
+
+    color: #ffffff;
 }
 
-.header .symbol {
-    font-family: serif;
-    font-size: 31px;
-    letter-spacing: 12px;
-    margin-left: 12px;
+
+.symbol {
+
+    font-family:
+        "Noto Serif KR",
+        serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    letter-spacing: 15px;
+
+    margin-left: 15px;
 }
 
-.header .sub {
-    font-size: 13px;
-    margin-top: 12px;
-    color: #cccccc;
+
+.hero-line {
+
+    width: 25px;
+
+    height: 1px;
+
+    margin:
+        20px auto;
+
+    background: #888;
 }
+
+
+.hero-text {
+
+    font-family:
+        "Noto Serif KR",
+        serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    letter-spacing: 3px;
+
+    color: #bababa;
+}
+
+
+/* 본문 */
 
 .content {
-    padding: 35px 25px;
+
+    padding:
+        43px
+        27px
+        35px;
 }
 
-.photo-wrap {
+
+/* 영정 */
+
+.photo-area {
+
     text-align: center;
-    margin-bottom: 25px;
 }
+
+
+.photo-frame {
+
+    display: inline-block;
+
+    padding: 7px;
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        #cccac5;
+
+    box-shadow:
+        0 4px 18px
+        rgba(0,0,0,0.07);
+}
+
 
 .photo {
-    width: 145px;
-    height: 180px;
+
+    display: block;
+
+    width: 150px;
+
+    height: 190px;
+
     object-fit: cover;
-    border: 1px solid #ddd;
-    filter: grayscale(100%);
+
+    object-position: center;
+
+    filter:
+        grayscale(100%);
 }
+
+
+/* 이름 */
 
 .name {
+
+    margin-top: 27px;
+
     text-align: center;
-    font-family: serif;
+
+    font-family:
+        "Noto Serif KR",
+        serif;
+
     font-size: 25px;
-    margin-top: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
 }
 
-.message {
+
+.small-title {
+
+    margin-top: 8px;
+
     text-align: center;
-    margin-top: 25px;
-    font-size: 15px;
-    line-height: 1.9;
-    color: #444;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #999;
 }
 
-.divider {
-    border: 0;
-    border-top: 1px solid #dddddd;
-    margin: 35px 0;
+
+/* 인사말 */
+
+.notice {
+
+    margin-top: 36px;
+
+    text-align: center;
+
+    font-family:
+        "Noto Serif KR",
+        serif;
+
+    font-size: 15px;
+
+    line-height: 2.05;
+
+    color: #505050;
 }
+
+
+/* 가운데 짧은 선 */
+
+.short-line {
+
+    width: 34px;
+
+    height: 1px;
+
+    margin:
+        42px auto;
+
+    background: #a8a8a8;
+}
+
+
+/* 구역 제목 */
+
+.section-title {
+
+    margin-bottom: 20px;
+
+    font-family:
+        "Noto Serif KR",
+        serif;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: .5px;
+}
+
+
+/* 장례정보 */
 
 .info {
-    font-size: 15px;
+
+    border-top:
+        1px solid
+        #e4e3df;
 }
 
+
 .info-row {
+
     display: flex;
-    margin: 17px 0;
+
+    padding:
+        16px
+        3px;
+
+    border-bottom:
+        1px solid
+        #ecebea;
+
+    font-size: 14px;
+
     line-height: 1.7;
 }
 
+
 .label {
-    width: 70px;
-    min-width: 70px;
-    font-weight: bold;
+
+    width: 72px;
+
+    flex-shrink: 0;
+
+    color: #858585;
+
+    font-weight: 400;
 }
+
 
 .value {
+
     flex: 1;
+
+    color: #292929;
+
+    font-weight: 400;
 }
 
-.section-title {
-    font-weight: bold;
-    margin-bottom: 18px;
-    font-size: 18px;
+
+/* 장소 */
+
+.place {
+
+    margin-top: 5px;
+
+    padding:
+        22px
+        20px;
+
+    background: #f7f6f3;
+
+    border:
+        1px solid
+        #eceae5;
 }
+
+
+.place-title {
+
+    font-family:
+        "Noto Serif KR",
+        serif;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    margin-bottom: 9px;
+}
+
+
+.place-detail {
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #707070;
+}
+
+
+/* 버튼 */
 
 .button {
+
+    display: block;
+
     width: 100%;
-    border: 1px solid #333;
-    background: white;
+
+    margin-top: 11px;
+
     padding: 15px;
-    margin-top: 10px;
-    font-size: 15px;
+
+    border:
+        1px solid
+        #333;
+
+    background: #fff;
+
+    color: #222;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-family:
+        "Noto Sans KR",
+        sans-serif;
+
+    font-size: 14px;
+
     cursor: pointer;
-    border-radius: 3px;
+
+    border-radius: 2px;
 }
+
 
 .button-dark {
-    background: #222;
-    color: white;
+
+    background: #242424;
+
+    color: #ffffff;
+
+    border-color: #242424;
 }
+
+
+.button-group {
+
+    margin-top: 18px;
+}
+
+
+/* 하단 */
 
 .footer {
-    background: #f7f7f7;
-    padding: 30px 20px 40px;
+
+    margin-top: 15px;
+
+    padding:
+        42px
+        25px
+        50px;
+
+    background: #f6f5f2;
+
     text-align: center;
+
+    font-family:
+        "Noto Serif KR",
+        serif;
+
     color: #777;
-    line-height: 1.8;
+
     font-size: 13px;
+
+    line-height: 2;
 }
 
+
 .flower {
-    font-size: 28px;
-    margin-bottom: 10px;
+
+    margin-bottom: 15px;
+
+    font-size: 26px;
+
+    color: #555;
+}
+
+
+/* 아주 작은 화면 */
+
+@media
+(max-width: 380px) {
+
+    .content {
+
+        padding-left: 21px;
+
+        padding-right: 21px;
+    }
+
+    .photo {
+
+        width: 140px;
+
+        height: 178px;
+    }
+
 }
 
 </style>
 </head>
 
+
+
 <body>
 
-<div class="container">
 
-    <div class="header">
-        <div class="symbol">謹弔</div>
-        <div class="sub">삼가 고인의 명복을 빕니다</div>
-    </div>
+<div class="page">
 
 
-    <div class="content">
+    <!-- 상단 -->
 
-        <!-- 영정 사진 -->
-        <div class="photo-wrap">
-            <img src="portrait.jpg"
-                 class="photo"
-                 alt="고인 사진">
+    <header class="hero">
+
+        <div class="symbol">
+            謹弔
+        </div>
+
+        <div class="hero-line"></div>
+
+        <div class="hero-text">
+            IN LOVING MEMORY
+        </div>
+
+    </header>
+
+
+
+    <main class="content">
+
+
+        <!-- 영정사진 -->
+
+        <div class="photo-area">
+
+            <div class="photo-frame">
+
+                <img
+                    src="portrait.jpg"
+                    class="photo"
+                    alt="故 석환희님">
+
+            </div>
+
         </div>
 
 
-        <!-- 고인 성함 -->
+
+        <!-- 고인 -->
+
         <div class="name">
-            故 김승욱 님
+
+            故 석환희 님
+
         </div>
 
 
-        <!-- 안내 문구 -->
-        <div class="message">
+        <div class="small-title">
+
+            부 고
+
+        </div>
+
+
+
+        <!-- 부고문 -->
+
+        <div class="notice">
 
             삼가 알려드립니다.<br><br>
 
-            故 김승욱 님께서<br>
-            2026년 9월 14일 별세하셨기에<br>
+            故 석환희 님께서 별세하셨기에<br>
             아래와 같이 부고를 전해드립니다.<br><br>
 
             직접 찾아뵙고 말씀드리지 못하고<br>
@@ -189,164 +553,332 @@ body {
             너른 양해 부탁드립니다.<br><br>
 
             고인의 마지막 가시는 길에<br>
-            따뜻한 위로와 마음을 함께해 주시면<br>
-            감사하겠습니다.
+            따뜻한 위로와 마음으로<br>
+            함께해 주시면 감사하겠습니다.
 
         </div>
 
 
-        <hr class="divider">
 
+        <div class="short-line"></div>
+
+
+
+        <!-- 장례정보 -->
 
         <div class="section-title">
+
             장례 안내
+
         </div>
 
 
         <div class="info">
 
+
+            <!-- 날짜 수정 -->
+
             <div class="info-row">
-                <div class="label">별세</div>
+
+                <div class="label">
+                    별세
+                </div>
+
                 <div class="value">
                     2026년 9월 14일
                 </div>
+
             </div>
 
 
+
             <div class="info-row">
-                <div class="label">빈소</div>
-                <div class="value">
-                    분당서울대학교병원 장례식장<br>
-                    3호실
+
+                <div class="label">
+                    빈소
                 </div>
-            </div>
 
-
-            <div class="info-row">
-                <div class="label">발인</div>
                 <div class="value">
-                    2026년 9월 16일<br>
-                    오전 07:00
+
+                    강동성심병원 장례식장<br>
+
+                    1호실
+
                 </div>
+
             </div>
 
 
+
+            <!-- 날짜/시간 수정 -->
+
             <div class="info-row">
-                <div class="label">장지</div>
+
+                <div class="label">
+                    발인
+                </div>
+
                 <div class="value">
+
+                    2026년 9월 17일<br>
+
+                    오전 7시 00분
+
+                </div>
+
+            </div>
+
+
+
+            <div class="info-row">
+
+                <div class="label">
+                    장지
+                </div>
+
+                <div class="value">
+
                     동화추모공원
+
                 </div>
+
             </div>
 
 
-            <div class="info-row">
-                <div class="label">상주</div>
-                <div class="value">
-                    김창균 · 김승우
-                </div>
+        </div>
+
+
+
+        <div class="short-line"></div>
+
+
+
+        <!-- 빈소 위치 -->
+
+        <div class="section-title">
+
+            빈소 안내
+
+        </div>
+
+
+        <div class="place">
+
+            <div class="place-title">
+
+                강동성심병원 장례식장
+
+            </div>
+
+
+            <div class="place-detail">
+
+                서울특별시 강동구 진황도로 86<br>
+
+                장례식장 문의<br>
+
+                02-2224-2193
+
             </div>
 
         </div>
 
 
-        <hr class="divider">
 
+        <div class="button-group">
+
+
+            <button
+                class="button"
+                onclick="openFuneralMap()">
+
+                장례식장 위치 보기
+
+            </button>
+
+
+            <a
+                href="tel:0222242193"
+                class="button">
+
+                장례식장 전화하기
+
+            </a>
+
+
+        </div>
+
+
+
+        <div class="short-line"></div>
+
+
+
+        <!-- 장지 -->
 
         <div class="section-title">
-            장례식장 위치
-        </div>
 
-
-        <div style="font-size:14px; line-height:1.8;">
-
-            분당서울대학교병원 장례식장<br>
-            경기도 성남시 분당구 구미로173번길 82<br><br>
-
-            장례식장 대표전화<br>
-            031-787-1500
+            장지 안내
 
         </div>
 
 
-        <button class="button"
-        onclick="window.open('https://map.naver.com/p/search/분당서울대학교병원장례식장')">
-            장례식장 위치 보기
-        </button>
+        <div class="place">
+
+            <div class="place-title">
+
+                동화추모공원
+
+            </div>
 
 
-        <hr class="divider">
+            <div class="place-detail">
 
+                장지 위치는 아래 버튼을 통해<br>
+                확인하실 수 있습니다.
 
-        <div class="section-title">
-            장지
-        </div>
-
-
-        <div style="font-size:14px; line-height:1.8;">
-
-            동화추모공원
+            </div>
 
         </div>
 
 
-        <button class="button"
-        onclick="window.open('https://map.naver.com/p/search/동화추모공원')">
+
+        <button
+            class="button"
+            onclick="openMemorialMap()">
+
             장지 위치 보기
+
         </button>
 
 
-        <hr class="divider">
+
+        <div class="short-line"></div>
 
 
-        <button class="button button-dark"
-                onclick="shareNotice()">
+
+        <!-- 공유 -->
+
+        <button
+            class="button button-dark"
+            onclick="shareNotice()">
 
             부고 공유하기
 
         </button>
 
 
-    </div>
+    </main>
 
 
-    <div class="footer">
 
-        <div class="flower">菊</div>
+    <footer class="footer">
 
-        삼가 고인의 명복을 빕니다.<br><br>
+        <div class="flower">
 
-        경황이 없어 일일이 연락드리지 못한 점<br>
-        너른 양해 부탁드립니다.
+            菊
 
-    </div>
+        </div>
+
+        삼가 고인의 명복을 빕니다.<br>
+
+        따뜻한 위로와 마음에<br>
+
+        깊이 감사드립니다.
+
+    </footer>
+
 
 </div>
 
 
+
 <script>
 
-function shareNotice() {
 
-    const data = {
-        title: "부고 안내",
-        text: "삼가 부고를 전합니다.",
-        url: window.location.href
+/* 장례식장 지도 */
+
+function openFuneralMap() {
+
+    window.open(
+        "https://map.naver.com/p/search/강동성심병원%20장례식장",
+        "_blank"
+    );
+
+}
+
+
+/* 장지 지도 */
+
+function openMemorialMap() {
+
+    window.open(
+        "https://map.naver.com/p/search/동화추모공원",
+        "_blank"
+    );
+
+}
+
+
+/* 공유 */
+
+async function shareNotice() {
+
+    const shareData = {
+
+        title:
+            "故 석환희님 부고",
+
+        text:
+            "故 석환희님의 부고를 전합니다.",
+
+        url:
+            window.location.href
+
     };
+
 
     if (navigator.share) {
 
-        navigator.share(data);
+        try {
+
+            await navigator.share(
+                shareData
+            );
+
+        } catch (error) {
+
+        }
 
     } else {
 
-        navigator.clipboard.writeText(window.location.href);
+        try {
 
-        alert("부고 주소가 복사되었습니다.");
+            await navigator.clipboard
+                .writeText(
+                    window.location.href
+                );
+
+            alert(
+                "부고 주소가 복사되었습니다."
+            );
+
+        } catch (error) {
+
+            prompt(
+                "아래 주소를 복사해주세요.",
+                window.location.href
+            );
+
+        }
 
     }
+
 }
 
+
 </script>
+
 
 </body>
 </html>
